@@ -1,3 +1,4 @@
+/* Global layout */
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
@@ -8,30 +9,45 @@ body {
     margin: 0;
 }
 
+/* App container */
 #todo-app {
     width: 100%;
-    max-width: 400px;
+    max-width: 430px;
     background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
 }
 
+/* Title */
+#todo-app h1 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* Input + button layout */
+#input-area {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+/* Input field */
 #task-input {
-    width: 100%;
+    flex: 1;
     padding: 10px;
-    margin-bottom: 10px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 5px;
 }
 
+/* Add Task button */
 #add-task-btn {
-    width: 100%;
-    padding: 10px;
+    padding: 10px 14px;
     background-color: #007bff;
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
@@ -39,21 +55,34 @@ body {
     background-color: #0056b3;
 }
 
+/* Empty state message */
+#empty-message {
+    text-align: center;
+    color: #888;
+    font-style: italic;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Task list styling */
 ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
+/* Task items */
 li {
     background-color: #eeeeee;
     margin-top: 8px;
     padding: 10px;
-    border-radius: 4px;
+    border-radius: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+/* Remove button */
 .remove-btn {
     cursor: pointer;
     background-color: #ff6347;

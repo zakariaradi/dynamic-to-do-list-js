@@ -7,12 +7,21 @@
 </head>
 <body>
     <div id="todo-app">
+
         <h1>My To-Do List</h1>
-        <input type="text" id="task-input" placeholder="Enter a new task">
-        <button id="add-task-btn">Add Task</button>
+
+        <div id="input-area">
+            <input type="text" id="task-input" placeholder="Enter a new task">
+            <button id="add-task-btn">Add Task</button>
+        </div>
+
+        <!-- Empty state message -->
+        <p id="empty-message">No tasks yet. Add your first task!</p>
+
         <ul id="task-list">
-            <!-- Tasks will be listed here -->
+            <!-- Tasks will appear here -->
         </ul>
+
     </div>
 
     <script src="script.js"></script>
